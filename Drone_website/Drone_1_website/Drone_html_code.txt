@@ -1,0 +1,40 @@
+HTML code
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fling drone</title>
+    <link rel="stylesheet" href="style10.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <style>
+        #video-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+    </style>
+</head>
+<body>
+    <div id="background">
+        <div id="drone-box">
+            <img src="C:\Users\lenovo\Downloads\drone.png" class="drone-img">
+            <img src="C:\Users\lenovo\Downloads\drone-left.png" class="drone-left">
+            <img src="C:\Users\lenovo\Downloads\drone-right.png" class="drone-right">
+        </div>
+    </div>
+
+    <!-- Add the live YouTube video iframe below -->
+    <div id="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/y1qDzW_yWko?si=JE86xaUOcTEQB-SN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+    <script src="C:\Users\lenovo\Downloads\script.js"></script>
+
+</body>
+</html>
