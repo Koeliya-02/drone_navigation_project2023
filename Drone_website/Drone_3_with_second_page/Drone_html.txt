@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fling drone</title>
+    <style>
+        html {
+            height: 100%;
+            background-image: url('file:///C:/Users/lenovo/Downloads/bg.jpg'); /* Replace with the actual path to your image */
+            background-size: cover; /* Adjust the background size to contain within the body */
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            height: 100%;
+        }
+
+        #video-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+        }
+
+        #button-container {
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            background-color: rgb(219, 144, 52); /* Button background color */
+            color: #1f1c1c; /* Button text color */
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        #myButton {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Add the live YouTube video iframe below -->
+    <div id="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/y1qDzW_yWko?si=JE86xaUOcTEQB-SN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+    <!-- Add the button below the YouTube video -->
+    <div id="button-container">
+        <button id="myButton" onclick="openNewPage()">Open New Page</button>
+    </div>
+
+    <script>
+        function openNewPage() {
+            window.open('file:///C:/Users/lenovo/Downloads/drone2.html', '_blank');
+        }
+    </script>
+</body>
+</html>

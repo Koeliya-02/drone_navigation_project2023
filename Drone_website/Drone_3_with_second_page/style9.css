@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    overflow: hidden; /* Hide the overflowing video */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+#video-bg {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    z-index: -1; /* Place the video behind other elements */
+}
+
+header, section, footer {
+    text-align: center;
+    color: #fff; /* Place these elements above the video */
+}
+
+header, section, footer {
+    position: relative;
+    z-index: 1; /* Place these elements above the video */
+}
+
+h1, h2 {
+    margin-bottom: 0.5em;
+}
+
+
+/* Add additional styling for your content */
